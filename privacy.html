@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Agentic Math Tutor</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #8b5cf6;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 { color: var(--text-color); }
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 { font-size: 1.8rem; margin-top: 40px; }
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        strong { color: #a78bfa; }
+        nav {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+        
+<h1>Privacy Policy - Agentic Math Tutor</h1>
+<div style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 30px;"><strong>Last Updated:</strong> September 2026</div>
+<p>The Agentic Math Tutor is designed to run locally within your Anna Host environment. We are committed to your privacy and transparent data practices.</p>
+<h2>Data Collection & Storage</h2>
+<div class="card">
+    <ul>
+        <li><strong>Application Storage:</strong> All conversational history and mathematical state are stored locally on your device via the <code>anna.storage</code> API. We do not transmit your history to a centralized cloud database.</li>
+        <li><strong>LLM Processing:</strong> Mathematical queries are processed by the Language Model provided by your Anna Host (<code>anna.llm.stream</code>). No API keys or external developer accounts are bundled.</li>
+        <li><strong>Uploaded Images:</strong> Images uploaded for mathematical OCR are encoded locally and processed by the Anna Host.</li>
+        <li><strong>Math Tool Execution:</strong> Numerical and symbolic computations are executed securely within local sandboxed Executas (<code>math-sympy</code>, <code>math-pyexec</code>, <code>math-graph</code>).</li>
+    </ul>
+</div>
+<h2>Third-Party Services</h2>
+<div class="card">
+    <p>This application does not bundle external trackers, analytics, or third-party databases (Firebase is not used in the production Anna runtime). All external calls are mediated strictly through the Anna Host APIs.</p>
+</div>
+<h2>Data Retention</h2>
+<div class="card">
+    <p>Because data is stored via <code>anna.storage</code> using a <code>last_writer_wins</code> merge strategy, your data remains in your local Anna environment and is retained according to your Host's storage policies.</p>
+</div>
+
+    </div>
+</body>
+</html>

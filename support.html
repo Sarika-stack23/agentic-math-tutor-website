@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Agentic Math Tutor</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #8b5cf6;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 { color: var(--text-color); }
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 { font-size: 1.8rem; margin-top: 40px; }
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        strong { color: #a78bfa; }
+        nav {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { text-decoration: underline; }
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+        
+<h1>Support - Agentic Math Tutor</h1>
+<p>If you are experiencing issues with the Agentic Math Tutor, please review the information below.</p>
+<h2>How to use the app</h2>
+<div class="card">
+    <p>The Agentic Math Tutor operates entirely within the Anna App Runtime.</p>
+    <ol>
+        <li>Enter your mathematical problem into the chat interface.</li>
+        <li>Use the action buttons (Hint, Steps, Answer, Why?, Teach Me) to guide your learning experience.</li>
+        <li>If you want to verify your own understanding, use the "Check My Work" feature to input your attempt.</li>
+    </ol>
+</div>
+<h2>Known Limitations</h2>
+<div class="card">
+    <ul>
+        <li>The Python numerical execution sandbox is designed for educational math workflows and restricts network/filesystem access.</li>
+        <li>Image parsing capabilities depend on the vision model provided by your Anna Host.</li>
+    </ul>
+</div>
+<h2>Contact</h2>
+<div class="card">
+    <p style="font-style: italic; color: #94a3b8;">This application is currently in early preview. For platform-level issues, please refer to the Anna Developer documentation.</p>
+</div>
+
+    </div>
+</body>
+</html>
